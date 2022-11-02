@@ -46,10 +46,10 @@ Use the copy function below to do the following:
 */
 
 
-function copy(originalFlavors){
-  
+function copy(array){
+  return [...array];
 }
-
+console.log(copy(originalFlavors));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -63,14 +63,14 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(originalFlavors){
-  if(originalFlavors.length === 31){
-    console.log(true);
+function is31Flavors(array){
+  if(array.length === 31){
+    return true;
   } else{
-    console.log(false);
+    return false;
   }
  }
- is31Flavors(originalFlavors);
+ console.log(is31Flavors(originalFlavors));
 
 
 
